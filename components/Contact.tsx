@@ -18,6 +18,7 @@ export default function Contact() {
   const channels = [
     { Icon: Mail, label: "E-mail", value: profile.email, href: `mailto:${profile.email}` },
     { Icon: Phone, label: "Téléphone", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
+    { Icon: Phone, label: "Téléphone 2", value: profile.phone2, href: `tel:${profile.phone2.replace(/\s/g, "")}` },
     { Icon: Chat, label: "WhatsApp", value: "Écrire sur WhatsApp", href: profile.whatsapp, external: true },
   ];
 

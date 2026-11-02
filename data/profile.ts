@@ -9,6 +9,7 @@ export const profile = {
   location: "RD Congo",
   email: "kabasiromain@gmail.com",
   phone: "+243 819 600 518",
+  phone2: "+243 999 967 088",
   whatsapp: "https://wa.me/243819600518",
   available: true,
   summary:
@@ -21,7 +22,7 @@ export const profile = {
 
 export const stats = [
   { value: "3+", label: "années d’expérience professionnelle" },
-  { value: "5", label: "plateformes conçues et livrées" },
+  { value: "7", label: "plateformes conçues et livrées" },
   { value: "5", label: "organisations accompagnées" },
   { value: "3", label: "langues parlées" },
 ];
@@ -53,7 +54,7 @@ export const experiences: Experience[] = [
   {
     company: "Indépendant",
     role: "Consultant & Développeur Freelance",
-    period: "Depuis octobre 2025",
+    period: "Depuis octobre 2023",
     current: true,
     type: "Freelance",
     highlights: [
@@ -62,17 +63,6 @@ export const experiences: Experience[] = [
       "Mise en réseau de systèmes de gestion, automatisation et reporting",
       "Déploiement, maintenance et support post-livraison",
       "Accompagnement technique et formation des utilisateurs",
-    ],
-  },
-  {
-    company: "FONAREV",
-    role: "Consultant Ingénieur Logiciel",
-    period: "Nov. 2025 — Janv. 2026",
-    type: "Mission de conseil",
-    highlights: [
-      "Développement et mise en ligne d’une plateforme de recrutement et de gestion de l’écosystème",
-      "Portail public ouvert aux candidats pour postuler",
-      "Back-office interne pour le traitement complet des candidatures et la gestion de l’écosystème",
     ],
   },
   {
@@ -115,11 +105,43 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "Écosystème",
+    tagline:
+      "Plateforme de recrutement et de gestion de l’écosystème national congolais : portail candidats, back-office de traitement multi-rôles et intégrations inter-plateformes.",
+    domain: "Secteur public · RH",
+    status: "Livré",
+    client: "Écosystème national congolais",
+    features: [
+      "Portail public de candidature avec critères d’éligibilité configurables",
+      "Back-office de réception des candidatures avec répartition des rôles par étape de traitement",
+      "Workflow d’approbation et de rejet avec notation et commentaires des évaluateurs",
+      "Conception d’API REST et de mécanismes d’intégration avec les plateformes partenaires",
+    ],
+    tags: ["Web app", "Back-office", "REST API", "Workflow", "RBAC"],
+    accent: 195,
+  },
+  {
+    name: "AGISMAC",
+    tagline:
+      "Portail d’accueil, de gestion de l’information scientifique et de monitoring des activités des chercheurs et innovateurs.",
+    domain: "Recherche & innovation",
+    status: "Livré",
+    features: [
+      "Architecture applicative modulaire et modélisation d’une base de données relationnelle",
+      "Gestion des utilisateurs, rôles, profils et habilitations (RBAC)",
+      "Gestion des candidatures, projets de recherche et d’innovation",
+      "Gestion de contenus : documentation des recherches et rapports",
+      "Circuits d’approbation sécurisés et notifications par e-mail",
+      "Conception d’API REST et de mécanismes d’intégration inter-plateformes",
+    ],
+    tags: ["Architecture modulaire", "RBAC", "REST API", "SGBDR"],
+    accent: 140,
+  },
+  {
     name: "Easy_Recruit",
     tagline: "Plateforme de recrutement en ligne : portail candidats et back-office de traitement des candidatures.",
     domain: "Ressources humaines",
     status: "Livré",
-    client: "FONAREV",
     features: [
       "Portail public ouvert aux candidatures selon des critères définis",
       "Réception en intranet avec répartition des rôles de traitement",
