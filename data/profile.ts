@@ -22,7 +22,7 @@ export const profile = {
 
 export const stats = [
   { value: "3+", label: "années d’expérience professionnelle" },
-  { value: "7", label: "plateformes conçues et livrées" },
+  { value: "8", label: "plateformes conçues et livrées" },
   { value: "5", label: "organisations accompagnées" },
   { value: "3", label: "langues parlées" },
 ];
@@ -136,6 +136,21 @@ export const projects: Project[] = [
     ],
     tags: ["Architecture modulaire", "RBAC", "REST API", "SGBDR"],
     accent: 140,
+  },
+  {
+    name: "Pay and Report",
+    tagline: "Solution de paie et SIRH multi-entreprises, du calcul de la paie à la gestion de carrière.",
+    domain: "Paie & SIRH",
+    status: "Livré",
+    features: [
+      "Calcul de la paie paramétrable et conforme à la législation RDC",
+      "Bulletins de paie PDF et synthèses de paie",
+      "Circuit de validation de la paie personnalisable par entreprise",
+      "Gestion de carrière complète des employés",
+      "Gestion des congés et des gratifications",
+    ],
+    tags: ["SIRH", "Paie", "Multi-entreprises", "Workflow", "Reporting"],
+    accent: 45,
   },
   {
     name: "Easy_Recruit",
